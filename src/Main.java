@@ -4,7 +4,9 @@
 public class Main {
     public static void main(String[] args){
         Frame frame = new Frame("Reversi");
-        frame.add(new Panel());
+        Bord bord = new Bord();
+        Panel panel = new Panel(bord);
+        frame.add(panel);
         frame.setVisible(true);
     }
 }
